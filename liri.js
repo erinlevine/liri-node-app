@@ -197,11 +197,22 @@ function movie(){
 }	
 }
 
-// //Creating a function for do-what-it-says:
-// function toWhat(){
+//Creating a function for do-what-it-says:
+function doWhat(){
+	fs.readFile("random.txt", "utf8", function(err, data){
+		if(err){
+			console.log(err);
+		}
 
-// }
-// });
+		randomArray = data.split(",")
+		console.log(randomArray);
+		process.argv.push(randomArray[1]);
+		spotify();
+	});
+
+
+}
+
 
 
 
