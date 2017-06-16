@@ -69,9 +69,9 @@ function movie(){
 
 	//Looping through all of the words in nodeArgs
 	//Adding a for-loop to handle the additional "+"
-	for (var i = 2; i < nodeArgs.length; i++) {
+	for (var i = 3; i < nodeArgs.length; i++) {
 
-	  if (i > 2 && i < nodeArgs.length) {
+	  if (i > 3 && i < nodeArgs.length) {
 
 	    movieName = movieName + "+" + nodeArgs[i];
 
